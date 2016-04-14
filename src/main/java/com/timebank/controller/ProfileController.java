@@ -37,7 +37,8 @@ import com.timebank.model.User;
 public class ProfileController {
 	 private static final int DEFAULT_BUFFER_SIZE = 10240; // 10KB.
 	  //String filePath ="C:\\Users\\Narcisa\\git\\TImebankRepo\\timebankRegistration\\src\\main\\resources\\uploads";
-	  String filePath = "G:\\timebank_fb_login2\\src\\main\\resources\\uploads";
+	  String filePath = "H:\\timebank_fb_login2\\src\\main\\resources\\uploads";
+
 	 
 	  @Autowired 
 		HttpSession session;

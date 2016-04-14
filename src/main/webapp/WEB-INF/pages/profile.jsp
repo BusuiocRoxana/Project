@@ -14,7 +14,7 @@
 <body>
 <form:form commandName="user">
  <div class="container">
- <img src="G:\timebank_fb_login2\src\main\resources\uploads" class="img-rounded" alt="Smiley face" height="200" width="200" > 
+ <img src="H:\timebank_fb_login2\src\main\resources\uploads\anamaria.jpg" class="img-rounded" alt="Smiley face" height="200" width="200" > 
  
  <div class="list-group">
     <a href="#" class="list-group-item active">

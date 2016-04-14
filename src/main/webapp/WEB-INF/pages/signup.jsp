@@ -15,7 +15,7 @@
 <div class="container">
 	<form:form commandName="user" enctype="multipart/form-data">
 
-	<h2>Create a time account</h2>
+	<h2>Create profile</h2>
 	<form role="form">
        
     <div class="form-group">

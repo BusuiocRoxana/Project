@@ -81,7 +81,7 @@ public class SignupController implements ServletContextAware{
     		 try {
     		// File file = new File( "C:\\Users\\Narcisa\\git\\TImebankRepo\\timebankRegistration\\src\\main\\resources\\uploads"
     
-    		 File file = new File( "G:\\timebank_fb_login2\\src\\main\\resources\\uploads"
+    		 File file = new File( "H:\\timebank_fb_login2\\src\\main\\resources\\uploads"
     		 		+ "\\"
     		 + filename);
     		  
