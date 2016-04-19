@@ -46,6 +46,9 @@ public class User {
     @Column (name = "profile_picture")
     String profilePicture;
     
+   /* @Column (name = "id_adress")
+    Address address;*/
+    
     
     @OneToMany (fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn (name = "user_id")
@@ -56,6 +59,7 @@ public class User {
     private List<Project> projects = new ArrayList<Project>();
     
     @OneToMany (fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+  //  @OneToMany(fetch = FetchType.LAZY, mappedBy = "user_id")
     @JoinColumn (name = "user_id")
     private List<Address> addresses = new ArrayList<Address>();
 
@@ -119,7 +123,7 @@ public class User {
 	public void setProjects(List<Project> projects) {
 		this.projects = projects;
 	}
-
+	
 	
 	public List<Address> getAddresses() {
 		return addresses;

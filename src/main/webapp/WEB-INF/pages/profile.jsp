@@ -2,6 +2,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>  
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <html>
 <head>
 <title>Profile</title>
@@ -28,6 +30,18 @@
     <a href="#" class="list-group-item">
       <h4 class="list-group-item-heading">Phone number</h4>
       <p class="list-group-item-text">${user.getPhoneNumber()}</p>
+    </a>
+    <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading">Address</h4>
+      <c:forEach items="${user.getAddresses()}" var="address">
+    <tr>
+     	<td>Street: <c:out value="${address.street}"/></td>  
+        <td>City: <c:out value="${address.city}"/></td>
+        <td>Country: <c:out value="${address.country}"/></td>  
+        <td>Continent: <c:out value="${address.continent}"/></td>  
+    </tr>
+</c:forEach>
+      <a href="/timebank/address/">Update address</a>
     </a>
   </div>
  </div>

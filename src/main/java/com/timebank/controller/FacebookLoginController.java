@@ -2,7 +2,7 @@
 
 import javax.inject.Inject;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.social.connect.ConnectionRepository;
 import org.springframework.social.facebook.api.Facebook;
@@ -12,15 +12,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
+@ComponentScan
+@EnableWebMvc
+@Configuration
 @Controller
 @RequestMapping("/facebookConnect")
 public class FacebookLoginController {
 
-
     private Facebook facebook;
 	private ConnectionRepository connectionRepository;
-
 
     @Inject
     public FacebookLoginController(Facebook facebook, ConnectionRepository connectionRepository) {
